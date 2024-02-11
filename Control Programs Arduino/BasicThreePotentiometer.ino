@@ -22,7 +22,6 @@ void loop() {//repeats forever
   motorESCBL.write(map(power - leftRightBias + ForwardBackwardBias,-1024,2048,1000,2000));//writes the translated value to the motor back left
   motorESCBR.write(map(power + leftRightBias + ForwardBackwardBias,-1024,2048,1000,2000));//writes the translated value to the motor back right
 
-  //Code from here to the end displays the values and is not nesseary
 
   // Serial.println(power); 
   // Serial.println(leftRightBias);
